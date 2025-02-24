@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Aditya Tripathi</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FF5722;
+            --background-color: #1A1A2E;
+            --text-color: #EAEAEA;
+            --highlight-color: #FFC107;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            border: 3px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: gradientBG 10s infinite alternate;
+            margin-bottom: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background: var(--primary-color);
+            }
+            50% {
+                background: var(--secondary-color);
+            }
+            100% {
+                background: var(--highlight-color);
+            }
+        }
+
+        h1 {
+            color: var(--highlight-color);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--highlight-color);
+        }
+
+        .branch-diagram {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .branch-diagram svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .branch-label {
+            fill: var(--highlight-color);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project-section {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 10px;
+            background: var(--background-color);
+        }
+
+        .project-section h2 {
+            color: var(--highlight-color);
+        }
+
+        .project-section input {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .project-section input[type="file"] {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hi, I'm <strong>Aditya Tripathi</strong>, a passionate data science student at MUIT Noida. I love exploring technology, coding, and solving complex problems. I have experience in <strong>HTML</strong>, <strong>Python</strong>, and <strong>Java</strong>.</p>
+        <p>When I'm not coding, you can find me exploring the technical books or creating diff. projects.</p>
+        <p>Feel free to connect with me for collaboration or a friendly chat!</p>
+        <a href="mailto:aditya@example.com">Get in Touch</a>
+    </div>
+
+    <div class="branch-diagram">
+        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+            <line x1="400" y1="50" x2="400" y2="100" stroke="var(--primary-color)" stroke-width="3" />
+            <line x1="400" y1="100" x2="200" y2="200" stroke="var(--primary-color)" stroke-width="3" />
+            <line x1="400" y1="100" x2="600" y2="200" stroke="var(--primary-color)" stroke-width="3" />
+            <circle cx="400" cy="50" r="10" fill="var(--highlight-color)" />
+            <circle cx="200" cy="200" r="10" fill="var(--highlight-color)" />
+            <circle cx="600" cy="200" r="10" fill="var(--highlight-color)" />
+            <text x="410" y="50" class="branch-label">Education</text>
+            <text x="140" y="220" class="branch-label">High School</text>
+            <text x="610" y="220" class="branch-label">MUIT Noida</text>
+        </svg>
+    </div>
+
+    <div class="project-section">
+        <h2>Upload Your Projects</h2>
+        <p>Share the amazing projects you've worked on!</p>
+        <input type="file" accept="image/*" multiple />
+    </div>
+</body>
+</html>

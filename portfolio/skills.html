@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FF5722;
+            --background-color: #1A1A2E;
+            --text-color: #EAEAEA;
+            --highlight-color: #FFC107;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .skills-section {
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid var(--secondary-color);
+            border-radius: 15px;
+            width: 80%;
+            max-width: 800px;
+            background: var(--background-color);
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            color: var(--highlight-color);
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background: var(--primary-color);
+            color: var(--text-color);
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill h3 {
+            color: var(--highlight-color);
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .add-skill {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .add-skill:hover {
+            background: var(--highlight-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-section">
+        <h2>Technical Skills</h2>
+        <div id="skillsContainer" class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Proficient in creating dynamic and responsive web pages with semantic HTML5 elements.</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Experienced in crafting elegant designs with advanced CSS, animations, and layouts.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Skilled in Python programming for data analysis, machine learning, and scripting.</p>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Strong foundation in Java for object-oriented programming and application development.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Skilled in JavaScript with expertise in DOM manipulation, event handling, and modern ES6+ features. Experienced in developing interactive web applications and integrating with backend APIs.</p>
+
+            </div>
+        </div>
+        <!-- <button class="add-skill" onclick="addSkill()">Add a New Skill</button> -->
+    </div>
+
+    <script>
+//         function addSkill() {
+//             const skillName = prompt("Enter the name of the skill:");
+//             const skillDescription = prompt("Enter a description for the skill:");
+
+//             if (skillName && skillDescription) {
+//                 const skillsContainer = document.getElementById('skillsContainer');
+
+//                 // Create a new skill block
+//                 const newSkill = document.createElement('div');
+//                 newSkill.className = 'skill';
+
+//                 // Add skill title
+//                 const skillTitle = document.createElement('h3');
+//                 skillTitle.textContent = skillName;
+//                 newSkill.appendChild(skillTitle);
+
+//                 // Add skill description
+//                 const skillDesc = document.createElement('p');
+//                 skillDesc.textContent = skillDescription;
+//                 newSkill.appendChild(skillDesc);
+
+//                 // Append to the skills container
+//                 skillsContainer.appendChild(newSkill);
+//             } else {
+//                 alert("Both skill name and description are required!");
+//             }
+//         }
+//     </script>
+  </body>
+ </html>
